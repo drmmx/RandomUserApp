@@ -1,6 +1,7 @@
 package com.drmmx.devmax.randomuserapp.ui;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
@@ -41,6 +42,8 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         callButton = findViewById(R.id.callButton);
 
