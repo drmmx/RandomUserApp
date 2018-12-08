@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Random User App</string>
+    <string name="profile">Profile</string>
+    <string name="cell_phone">Cell Phone</string>
+    <string name="email">Email</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="call">Call</string>
+    <string name="change_layout">Change Layout</string>
 </resources>
