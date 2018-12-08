@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/changeLayoutMenu"
+        android:title="@string/change_layout"
+        android:icon="@drawable/ic_view_module"
+        app:showAsAction="ifRoom"/>
+</menu>
