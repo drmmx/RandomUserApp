@@ -1,5 +1,7 @@
 package com.drmmx.devmax.randomuserapp.util;
 
+import android.annotation.SuppressLint;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,8 +24,8 @@ public class Utils {
 
     //Format Date of birth
     public static String viewSimpleDate(String inputDate) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-        SimpleDateFormat output = new SimpleDateFormat("YYYY-mm-dd");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat output = new SimpleDateFormat("yyyy-MM-dd");
         String formattedDate = null;
         try {
             Date date = sdf.parse(inputDate);
